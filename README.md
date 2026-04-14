@@ -21,3 +21,8 @@ H1 (Alternative Hypothesis): There is a relationship between Netflix hours and s
 The correlation coefficient between Netflix hours and snack consumption is approximately 0.97, indicating a very strong positive relationship.
 
 Therefore, we reject the null hypothesis and conclude that there is a significant relationship between the variables.
+## Files
+
+- Book.csv: Raw dataset
+- data_analysis.xlsx: Excel file including correlation calculation and analysis
+- graph.png: Scatter plot visualization
