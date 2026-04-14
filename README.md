@@ -12,3 +12,4 @@ A scatter plot was created to analyze the relationship between Netflix usage and
 
 ## Conclusion
 There appears to be a positive relationship: as Netflix hours increase, snack consumption also tends to increase.
+The dataset is small, so conclusions are indicative rather than definitive.
