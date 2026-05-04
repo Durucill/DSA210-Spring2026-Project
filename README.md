@@ -91,3 +91,21 @@ We used **Pearson correlation** to test the relationship.
 
 - Dataset is cleaned and preprocessed within the notebook
 - All visualizations and statistical tests are reproducible
+## Machine Learning
+
+We applied Logistic Regression to predict whether a snack order occurs based on Netflix usage.
+
+### Model Setup
+- Feature: Netflix_Count
+- Target: Snack_Order
+- Train/Test split: 80/20
+
+### Results
+- Accuracy: ~71%
+
+However, the model predicts almost all observations as "snack order = 1", failing to capture the minority class.
+
+### Interpretation
+This indicates a class imbalance problem and suggests that Netflix usage alone is not a strong predictor of snack ordering behavior.
+
+These results are consistent with the statistical analysis, which showed only a weak relationship between the variables.
