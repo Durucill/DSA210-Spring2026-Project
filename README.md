@@ -36,8 +36,10 @@ The following analyses were performed:
 - Correlation heatmap
 - Boxplot (Netflix usage vs snack order)
 - Scatter plot
+- Logistic Regression model for prediction
 
 These helped to understand the distribution and potential relationships between variables.
+
 
 ---
 
@@ -64,6 +66,7 @@ We used **Pearson correlation** to test the relationship.
 - There is a **weak positive correlation** between Netflix watching and snack ordering.
 - The relationship is **statistically significant** (p < 0.05).
 - However, the effect size is small → meaning Netflix usage alone is not a strong predictor of snack behavior.
+- - Machine learning results support this finding, as the model struggled to predict snack orders accurately and defaulted to the majority class.
 
 - **Lag analysis shows almost no relationship**, meaning watching Netflix today does not significantly affect snack orders the next day.
 
@@ -102,6 +105,8 @@ We applied Logistic Regression to predict whether a snack order occurs based on 
 
 ### Results
 - Accuracy: ~71%
+- The model shows high accuracy due to class imbalance, predicting mostly the majority class (snack order = 1).
+- It fails to correctly identify the minority class (no snack orders).
 
 However, the model predicts almost all observations as "snack order = 1", failing to capture the minority class.
 
@@ -109,3 +114,4 @@ However, the model predicts almost all observations as "snack order = 1", failin
 This indicates a class imbalance problem and suggests that Netflix usage alone is not a strong predictor of snack ordering behavior.
 
 These results are consistent with the statistical analysis, which showed only a weak relationship between the variables.
+These findings are consistent with the hypothesis testing results, which showed a weak but statistically significant relationship.
